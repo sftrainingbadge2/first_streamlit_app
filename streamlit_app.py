@@ -30,4 +30,4 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(myfruitlist.in
 fruits_to_show = myfruitlist.loc[fruits_selected]
 
 # Display the table on the page.
-streamlit.dataframe(myfruitlist)
+streamlit.dataframe(fruits_to_show)
